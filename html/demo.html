@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<body>
+     
+    <p id="demo">hello world</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='25px'">clickme
+
+    </button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <button onclick="myfunction()">hello!!</button>
+    
+    <p id="calculation"></p>
+</body>
+<script>
+        
+        console.log("hello machi")
+        function myfunction() {
+            document.getElementById('demo1').innerHTML = "<h2>hello word</h2>";
+            document.getElementById('demo2').innerText = "my mom";
+
+        }
+
+        let a = 10;
+        let b = 5;
+        let c = a + b;
+        document.getElementById('calculation').innerHTML = "the calacuated value" + c;
+
+
+    </script>
+</html>
