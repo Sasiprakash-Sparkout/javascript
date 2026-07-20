@@ -1,4 +1,4 @@
-let a="sasi";
+/* let a="sasi";
 console.log(a)    
         
 const n="my name",dept="cs",roll="21";
@@ -36,16 +36,16 @@ console.log(d);
 let pr=12;
 let sp=2;
 let sum1=pr**sp;
-console.log(sum1);
+console.log(sum1); */
 
 
 //operator presendecy
 let hr=20,br=30,sr=50;
 let sh=20+30/50;
-console.log("operatorpresedency"+sh);
+console.log(sh);
 
 
-//assignment operator
+/* //assignment operator
 let ab=20;
  ab *=20;
  console.log("assignment"+ab)
@@ -57,4 +57,4 @@ let ab=20;
  
  // comparsion operator
  let res1=f2<f5;
- console.log(res1);
+ console.log(res1); */
