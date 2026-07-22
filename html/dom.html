@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body>
+    
+    <h1 id="helloworld"></h1>
+    <h1>sparkout</h1>
+    <h1 id="demo"></h1>
+   
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p class="intro"> this my love</p>
+        <p class="intro"> this is used for my dad</p>
+        <p id="container"></p> 
+    </div> 
+    <p class="para1">first tag</p>
+    <p class="para1">sewcond tag</p>
+    
+</body>
+<script>
+   //id selector
+document.getElementById('helloworld').innerText="my website";
+//tag selector
+let element=document.getElementsByTagName("h1");
+document.getElementById('demo').innerHTML="my faviourat food is chicken palipalayam :"+element[0].innerHTML;
+//class selector
+const d=document.getElementsByClassName('intro');
+document.getElementById('container').innerHTML="i am a software developer :"+d[0].innerHTML;
+//query selector
+//const a=document.querySelector(".para1");
+const a=document.querySelectorAll(".para1");
+a[1].innerHTML="1";
+
+</script>
+</html>

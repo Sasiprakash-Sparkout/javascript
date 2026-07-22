@@ -48,27 +48,26 @@ console.log(oddeven(2)); */
 
 //finction call back
 
-/* function oper(calc,a,b){
-    return calc(a,b);
+ 
+
+/* function string(str,a,b){
+    return  str(a,b);
 }
-let add=(a,b) =>a+b;
-let sub=(a,b)=>a-b;
-console.log(oper(add,112,1)); 
-
-
-let multiply= (a,b=5)=>a*b;
-console.log(multiply(4));
+let st1=(a,b)=>(a+b);
+console.log(string(st1,"sasi","prakash"));
+let st2=(a,b)=>(a-b);
+console.log(string(st2,"sasi","prakash")); */
 //reset parameter
 
 function reset(...names){
     console.log(names);
 }
-reset("sasi,prakash,sarath");*/
-"use strict"
+reset("sasi,prakash,sarath,sasi,prakash,madhan");
+/* "use strict"
 function test() {
     name = "Sasi";
 }
 
 test();
 
-console.log(name);
+console.log(name); */
