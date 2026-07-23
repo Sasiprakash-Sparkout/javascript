@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="myform" method="post">
+        <label for="name">Enter the name:</label>
+        <input type="text" placeholder="enter the name " class="name"><br><br>
+        <label for="mail">Enter the mail</label>
+        <input type="email" placeholder="example.com" class="name"><br><br>
+        <select id="list">
+            <option>amma</option>
+            <option>appa</option>
+            <option>sister</option>
+        </select>
+        <button>submit</button>
+    </form>
+
+
+</body>
+<script>
+    //1.focus 
+    let form = document.querySelectorAll('.name');
+    form.forEach((all) => {
+        all.addEventListener('focus', () => {
+            all.style.border = "5px solid blue";
+
+        });
+        //blur
+        all.addEventListener('blur', () => {
+            all.style.border = "4px solid red";
+        });
+        //input
+        all.addEventListener('input', () => {
+console.log("charecter enter or changed");
+        });
+    });
+    //2.submit
+    let all = document.getElementById('myform');
+    all.addEventListener('submit', () => {
+        console.log("formsubmitted");
+    });
+    //4.change
+    let select = document.getElementById('list');
+    select.addEventListener('change', () => {
+        console.log("character entered");
+    });
+
+
+
+
+
+
+</script>
+
+</html>

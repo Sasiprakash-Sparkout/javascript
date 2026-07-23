@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent">
+        <button>edit</button>
+        <button>save</button>
+        <button>run</button>
+    </div>
+</body>
+<script>
+    let btn = document.getElementById('parent');
+    btn.addEventListener('click', () => {
+       console.log(event.target.innerText);
+    });
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Creating elements</h1>
+    <h1 id="dom"></h1>
+    <ul id="list">
+        <li>laptop</li>
+        <li>mouse</li><br>
+        <button onclick="dom()">clickme</button>
+    </ul>
+</body>
+<script>
+    //normal
+    let item=document.createElement('li');
+    item.innerText="my world";
+document.getElementById("dom").appendChild(item);
+//using function
+function dom(){
+    let a=document.createElement(li);
+    a.innerText="mobile phone";
+    document.getElementById("list").appendChild(li);
+
+}
+</script>
+</html>

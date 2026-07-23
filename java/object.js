@@ -1,4 +1,4 @@
-/* /* /* // declare an object
+ /* /* /* // declare an object
 let bike = {
     name: "hunter",
     brand: "royal enfield",

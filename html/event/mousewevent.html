@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <button id="mouse">normal</button>
+ </body>
+ <script>
+    //mouse events
+    //1.click
+let btn=document.getElementById('mouse');
+btn.addEventListener('click',(event)=>{
+    btn.textContent="button clicked";
+    console.log("click");
+    //2.mouseover
+});
+btn.addEventListener('mouseover',(event)=>{
+    btn.textContent="click me";
+    console.log("hover");
+    //3.mouseout
+});
+btn.addEventListener('mouseout',(event)=>{
+    btn.textContent="normal";
+    console.log("default");
+});
+//4.mousedowb
+btn.addEventListener('mousedown',(event)=>{
+    btn.textContent="triggered";
+    console.log(triggered);
+});
+//mouseup
+btn.addEventListener('mouseup',(event)=>{
+    btn.textContent="button cancel";
+    console.log(cancel);
+});
+//doupleclick
+btn.addEventListener('dbclick',(event)=>{
+    btn.textContent="doubleclick";
+    console.log(doubleclick);
+});
+btn.addEventListener('click',(event)=>{
+    alert("button clicked");
+    console.log(btn);
+});
+
+ </script>
+ </html>
